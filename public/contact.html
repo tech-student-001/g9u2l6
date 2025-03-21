@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md p-4 fixed top-0 w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Contact Us</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                    <li><a href="./manage_contact.html" class="hover:text-red-500">Contact List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex items-center justify-center min-h-screen">
+        <section class="bg-white p-8 shadow-lg rounded-lg w-full max-w-md">
+            <h2 class="text-xl font-semibold text-center mb-4">Get in Touch</h2>
+            <form id="contact-form">
+                <label class="block mb-2 font-medium">Name:</label>
+                <input type="text" name="name" id="name" class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required>
+
+                <label class="block mb-2 font-medium">Email:</label>
+                <input type="email" name="email" id="email" class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required>
+
+                <label class="block mb-2 font-medium">Phone:</label>
+                <input type="tel" name="phone" id="phone" class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required>
+
+                <label class="block mb-2 font-medium">Message:</label>
+                <textarea name="message" id="message" rows="4" class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required></textarea>
+
+                <button type="submit"
+                    class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Submit</button>
+            </form>
+            <p id="response-message" class="text-center mt-4 text-green-500 hidden">Message sent successfully!</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 fixed bottom-0 w-full">
+        <p>&copy; Art Portfolio</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

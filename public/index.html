@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Art Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="text-center">
+            <h2 class="text-3xl font-semibold mb-4">Gallery</h2>
+            <div class="flex items-center justify-center space-x-4">
+                <button id="prevBtn" class="p-2 rounded-full bg-gray-200 hover:bg-red-500 text-xl">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <div class="relative">
+                    <div id="artwork-container" class="text-center"></div>
+                </div>
+                <button id="nextBtn" class="p-2 rounded-full bg-gray-200 hover:bg-red-500 text-xl">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <div class="text-center mt-6">
+            <a href="./contact.html" class="text-lg text-blue-600 hover:text-red-500">Contact <i
+                    class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 fixed bottom-0 w-full">
+        <p>&copy; Art Portfolio</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

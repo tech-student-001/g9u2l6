@@ -1,0 +1,14 @@
+my-web-application
+│
+├── node_modules/             # Installed Node.js dependencies (created by npm)
+│     
+├── public/                   # Publicly accessible frontend files
+│   ├── index.html            # Homepage (Art Portfolio)
+│   ├── contact.html          # Contact form page
+│   ├── manage_contact.html   # Contact management page
+│   ├── login.html            # login form
+│   ├── script.js             # Frontend JavaScript logic
+│     
+├── app.js                    # Main Node.js backend server
+├── package.json              # Project metadata and dependencies
+└── package-lock.json         # Auto-generated dependency lock file
